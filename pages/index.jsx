@@ -11,6 +11,7 @@ export default function Home() {
           <Link href="/component/functional">FUNCTIONAL COMPONENT</Link>
         </li>
       </ul>
+
     </div>
   )
 }
