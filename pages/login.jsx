@@ -1,4 +1,4 @@
-import { useState, useContext} from "react"
+import { useState, useContext, useEffect} from "react"
 import Input from "../component/Input"
 import Layout from "../component/Layout"
 import Button from "../component/Button"
@@ -28,6 +28,12 @@ const Login = () =>{
         })
         .catch(err=>{})
     }
+
+    useEffect(()=>{
+        if(localStorage.getItem("token")){
+            router.replace("/product")
+        }
+    }, []) // on mount / on document ready
     return (
         <Layout>
             <form onSubmit={doLogin}>

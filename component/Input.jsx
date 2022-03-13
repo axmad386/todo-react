@@ -7,12 +7,12 @@ const Input = ({name, value="", onTextChange})=>{
         onTextChange(e.target.value)
     }
     return (
-        <>
+        <div style={{marginBottom: "10px"}}>
             <label htmlFor={name}>{name}</label>
             <input type="text" name={name} value={value} className={style.input} onChange={onInputChange}/>
             <small className={style.error}>{errors[name]}</small>
             <br></br>
-        </>
+        </div>
 
     )
 }
