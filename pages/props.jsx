@@ -6,28 +6,7 @@ import { ThemeContext } from "../context/ThemeContext";
 
 const Props = ()=>{
 
-    const [dark, setDark] = useState(false);
-
-    const toggleDarkMode = ()=>{
-        setDark(!dark)
-    }
-
-    // on mounted
-    useEffect(()=>{
-        const theme = JSON.parse(localStorage.getItem("theme")||{
-            dark: false
-        }) 
-        setDark(theme.dark)
-    }, [])
-
-
-    // saat ada perubahan state dark
-    useEffect(()=>{
-        localStorage.setItem("theme", JSON.stringify({
-            dark: dark
-        }))
-    }, [dark])
-
+    
 
     return (
     <Layout dark={dark} toggleDarkMode={toggleDarkMode}>

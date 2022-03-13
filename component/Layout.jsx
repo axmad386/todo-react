@@ -1,14 +1,17 @@
-import { useState } from "react"
+import { useContext } from "react"
+import { ThemeContext } from "../context/ThemeContext"
 
-const Layout = ({children, dark, toggleDarkMode})=>{
-
+const Layout = ({children})=>{
+    const {dark, setDark} = useContext(ThemeContext)
+    const toggleDarkMode = ()=>{
+        setDark(!dark)    
+    }
     return (
         <>
             <nav  style={{
                  backgroundColor: dark?"#333":"#fff",
                  color: "white"
              }}>
-                 {JSON.stringify(dark)}
                  <button onClick={toggleDarkMode}>TOGGLE DARK MODE</button>
              </nav>
 

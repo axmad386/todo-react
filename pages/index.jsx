@@ -5,10 +5,13 @@ export default function Home() {
     <div id="header">
       <ul>
         <li>
-          <Link href="/component/class">CLASS COMPONENT</Link>
+          <Link href="/komponen/class">CLASS COMPONENT</Link>
         </li>
         <li>
-          <Link href="/component/functional">FUNCTIONAL COMPONENT</Link>
+          <Link href="/komponen/functional">FUNCTIONAL COMPONENT</Link>
+        </li>
+        <li>
+          <Link href="/login">LOGIN</Link>
         </li>
       </ul>
 

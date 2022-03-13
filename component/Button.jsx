@@ -1,13 +1,6 @@
-const Button = ({color, children})=>{
+const Button = ({children})=>{
     return (
-        <button style={
-            {
-                backgroundColor: color,
-                border: 'none',
-                marginLeft: '10px',
-                marginRight: '10px'
-            }
-        }>
+        <button>
             {children}
         </button>
     )

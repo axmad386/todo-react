@@ -1,5 +1,6 @@
 import { createContext } from "react";
 
 export const ThemeContext = createContext({
-    dark: false
+    dark: false,
+    setDark: ()=>{}
 });
