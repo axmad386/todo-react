@@ -1,7 +1,7 @@
 import Axios from "axios"
 import { useContext } from "react"
 import ErrorContext from "../context/ErrorContext"
-const HOST = "http://todoapi.webofficial.my.id"
+const HOST = "https://todoapi.webofficial.my.id"
 
 const useApi = ()=>{
     const {errors, setErrors} = useContext(ErrorContext)
